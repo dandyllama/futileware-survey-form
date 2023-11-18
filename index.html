@@ -56,7 +56,9 @@
             >Which option best descirbes your current role?</label
           >
           <select id="dropdown" name="dropdown">
-            <option value="no-selection">Select current role</option>
+            <option value="no-selection" disabled selected>
+              Select current role
+            </option>
             <option value="student">Student</option>
             <option value="full-time">Full-time job</option>
             <option value="part-time">Part-time job</option>
@@ -70,30 +72,34 @@
           <fieldset>
             <legend>Would you recommend Futileware to a friend?</legend>
 
-            <input
-              id="definitely"
-              type="radio"
-              name="recommendation"
-              value="definitely"
-              checked
-            />
-            <label id="definitely-label" for="definitely">Definitely</label>
-
-            <input
-              id="maybe"
-              type="radio"
-              name="recommendation"
-              value="maybe"
-            />
-            <label id="maybe-label" for="maybe">Maybe</label>
-
-            <input
-              id="not-sure"
-              type="radio"
-              name="recommendation"
-              value="not-sure"
-            />
-            <label id="not-sure-label" for="not-sure">Not sure</label>
+            <div class="list-container">
+              <input
+                id="definitely"
+                type="radio"
+                name="recommendation"
+                value="definitely"
+                checked
+              />
+              <label id="definitely-label" for="definitely">Definitely</label>
+            </div>
+            <div class="list-container">
+              <input
+                id="maybe"
+                type="radio"
+                name="recommendation"
+                value="maybe"
+              />
+              <label id="maybe-label" for="maybe">Maybe</label>
+            </div>
+            <div class="list-container">
+              <input
+                id="not-sure"
+                type="radio"
+                name="recommendation"
+                value="not-sure"
+              />
+              <label id="not-sure-label" for="not-sure">Not sure</label>
+            </div>
           </fieldset>
         </div>
 
@@ -101,22 +107,32 @@
           <fieldset>
             <legend>Which of our products do you like?</legend>
 
-            <input id="hat" type="checkbox" name="products" value="hat" />
-            <label id="hat-label" for="hat">Cat Hat</label>
-
-            <input id="shoes" type="checkbox" name="products" value="shoes" />
-            <label id="shoes-label" for="shoes">Backward Shoes</label>
-
-            <input id="mirror" type="checkbox" name="products" value="mirror" />
-            <label id="mirror-label" for="mirror">Slo-mo Mirror</label>
-
-            <input
-              id="glasses"
-              type="checkbox"
-              name="products"
-              value="glasses"
-            />
-            <label id="glasses-label" for="glasses">Clown Glasses</label>
+            <div class="list-container">
+              <input id="hat" type="checkbox" name="products" value="hat" />
+              <label id="hat-label" for="hat">Cat Hat</label>
+            </div>
+            <div class="list-container">
+              <input id="shoes" type="checkbox" name="products" value="shoes" />
+              <label id="shoes-label" for="shoes">Backward Shoes</label>
+            </div>
+            <div class="list-container">
+              <input
+                id="mirror"
+                type="checkbox"
+                name="products"
+                value="mirror"
+              />
+              <label id="mirror-label" for="mirror">Slo-mo Mirror</label>
+            </div>
+            <div class="list-container">
+              <input
+                id="glasses"
+                type="checkbox"
+                name="products"
+                value="glasses"
+              />
+              <label id="glasses-label" for="glasses">Clown Glasses</label>
+            </div>
           </fieldset>
         </div>
 
