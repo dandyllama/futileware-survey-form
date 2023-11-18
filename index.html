@@ -7,6 +7,135 @@
     <meta name="keywords" content="survey form" />
     <meta name="author" content="Dandy Llama" />
     <title>Futileware Survey Form</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header>
+        <h1 id="title">Futileware Survey Form</h1>
+        <p id="description">Life is too short for boring, useful inventions!</p>
+      </header>
+
+      <form id="survey-form" action="#">
+        <div class="item-container">
+          <label id="name-label" for="name">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+
+        <div class="item-container">
+          <label id="email-label" for="email">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="item-container">
+          <label id="number-label" for="number">Age (optional)</label>
+          <input
+            id="number"
+            type="number"
+            name="age"
+            placeholder="Age"
+            min="13"
+            max="100"
+          />
+        </div>
+
+        <div class="item-container">
+          <label id="dropdown-label" for="dropdown"
+            >Which option best descirbes your current role?</label
+          >
+          <select id="dropdown" name="dropdown">
+            <option value="no-selection">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-time">Full-time job</option>
+            <option value="part-time">Part-time job</option>
+            <option value="intern">Intern</option>
+            <option value="opt-out">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="item-container">
+          <fieldset>
+            <legend>Would you recommend Futileware to a friend?</legend>
+
+            <input
+              id="definitely"
+              type="radio"
+              name="recommendation"
+              value="definitely"
+              checked
+            />
+            <label id="definitely-label" for="definitely">Definitely</label>
+
+            <input
+              id="maybe"
+              type="radio"
+              name="recommendation"
+              value="maybe"
+            />
+            <label id="maybe-label" for="maybe">Maybe</label>
+
+            <input
+              id="not-sure"
+              type="radio"
+              name="recommendation"
+              value="not-sure"
+            />
+            <label id="not-sure-label" for="not-sure">Not sure</label>
+          </fieldset>
+        </div>
+
+        <div class="item-container">
+          <fieldset>
+            <legend>Which of our products do you like?</legend>
+
+            <input id="hat" type="checkbox" name="products" value="hat" />
+            <label id="hat-label" for="hat">Cat Hat</label>
+
+            <input id="shoes" type="checkbox" name="products" value="shoes" />
+            <label id="shoes-label" for="shoes">Backward Shoes</label>
+
+            <input id="mirror" type="checkbox" name="products" value="mirror" />
+            <label id="mirror-label" for="mirror">Slo-mo Mirror</label>
+
+            <input
+              id="glasses"
+              type="checkbox"
+              name="products"
+              value="glasses"
+            />
+            <label id="glasses-label" for="glasses">Clown Glasses</label>
+          </fieldset>
+        </div>
+
+        <div class="item-container">
+          <label id="comments-label" for="comments"
+            >Any comments or suggestions</label
+          >
+          <textarea
+            id="comments"
+            name="comments"
+            rows="3"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="item-container">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
 </html>
