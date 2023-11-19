@@ -8,7 +8,7 @@ This project demonstrates a survey form for Futileware built using HTML and CSS 
 
 ## Screenshots
 
-![Home page screenshot](./assets/screenshots/home-screenshot.png)
+![page screenshot](./assets/screenshots/page-screenshot.png)
 
 ## Credits
 
