@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@
   --form-background: rgba(158, 90, 173, 0.35);
   --button-background: #a2d2ff;
   --text-color: #1d1d47;
+  --header-text-color: rgba(94, 39, 136, 0.65);
 }
 
 *,
@@ -44,21 +45,20 @@ header {
 }
 
 header h1 {
-  font-size: 1.75rem;
-  font-weight: 500;
-  margin: 10px auto;
+  color: var(--header-text-color);
+  font-family: "Zeyada", "Poppins", sans-serif;
+  font-size: 4rem;
 }
 
 header p {
   font-style: italic;
-  padding-bottom: 20px;
-  margin: 10px auto;
+  padding-bottom: 2rem;
 }
 
 form {
   margin: unset;
   padding: 1.5rem;
-  width: 500px;
+  width: 600px;
   background-color: var(--form-background);
   border-radius: 0.5rem;
 }
