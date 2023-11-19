@@ -4,6 +4,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --body-background: linear-gradient(
+      rgba(255, 199, 199, 0.5),
+      rgba(152, 152, 230, 0.5)
+    ),
+    url("../assets/images/pink-clouds.jpg");
+  --form-background: rgba(158, 90, 173, 0.35);
+  --button-background: #a2d2ff;
+  --text-color: #1d1d47;
 }
 
 *,
@@ -14,4 +22,77 @@
   margin: inherit;
   padding: inherit;
   box-sizing: inherit;
+}
+
+body {
+  width: 100vw;
+  max-width: 100%;
+  color: var(--text-color);
+  background-image: var(--body-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin: 50px auto;
+}
+
+header {
+  margin: unset;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+header p {
+  font-style: italic;
+  padding-bottom: 20px;
+  margin: 10px auto;
+}
+
+form {
+  margin: unset;
+  padding: 1.5rem;
+  width: 500px;
+  background-color: var(--form-background);
+  border-radius: 0.5rem;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.35rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  color: var(--text-color);
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.item-container {
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset {
+  padding: 0.25rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
